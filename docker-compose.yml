@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  postgres_benchmark:
+    image: "postgres:latest"
+    ports:
+    - "5432:5432"
+    environment:
+    - POSTGRES_DB=benchmark
+    - POSTGRES_USER=admin
+    - POSTGRES_PASSWORD=admin
